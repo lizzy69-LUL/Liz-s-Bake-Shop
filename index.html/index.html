@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liz’s Bake Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Liz’s Bake Shop</h1>
+    <p class="slogan">“Baking, Lizzy’s way!”</p>
+  </header>
+
+  <!-- (Optional: add filter buttons here) -->
+  <nav id="product-filters"></nav>
+
+  <!-- Product Sections -->
+  <main id="products">
+
+    <!-- ========== COOKIES ========== -->
+    <div class="product-card">
+      <h3>Cookies</h3>
+      <div class="product-dropdown">
+        <select id="cookies-select">
+          <option value="" disabled selected>Select a cookie</option>
+          <option value="chocolate_chip">Chocolate Chip Cookie</option>
+          <option value="oatmeal_raisin">Oatmeal Raisin Cookie</option>
+          <option value="snickerdoodle">Snickerdoodle Cookie</option>
+        </select>
+        <span class="info-icon" data-target="cookies-info">i</span>
+        <div class="ingredient-list" id="cookies-info">
+          <ul>
+            <li>All-purpose flour</li>
+            <li>Granulated sugar</li>
+            <li>Butter</li>
+            <li>Eggs</li>
+            <li>Chocolate chips</li>
+            <li>Vanilla extract</li>
+          </ul>
+        </div>
+      </div>
+      <a class="inquire-link"
+         href="mailto:lizsbakeshop2@gmail.com?subject=Inquire%20to%20Buy%20Cookies">
+        Inquire to Buy
+      </a>
+    </div>
+
+    <!-- ========== JAMS ========== -->
+    <div class="product-card">
+      <h3>Jams</h3>
+      <div class="product-dropdown">
+        <select id="jams-select">
+          <option value="" disabled selected>Select a jam</option>
+          <option value="strawberry">Strawberry Jam</option>
+          <option value="blueberry">Blueberry Jam</option>
+          <option value="raspberry">Raspberry Jam</option>
+        </select>
+        <span class="info-icon" data-target="jams-info">i</span>
+        <div class="ingredient-list" id="jams-info">
+          <ul>
+            <li>Fresh fruit</li>
+            <li>Sugar</li>
+            <li>Lemon juice</li>
+            <li>Pectin</li>
+          </ul>
+        </div>
+      </div>
+      <a class="inquire-link"
+         href="mailto:lizsbakeshop2@gmail.com?subject=Inquire%20to%20Buy%20Jam">
+        Inquire to Buy
+      </a>
+    </div>
+
+    <!-- ========== BUTTERS ========== -->
+    <div class="product-card">
+      <h3>Butters</h3>
+      <div class="product-dropdown">
+        <select id="butters-select">
+          <option value="" disabled selected>Select a butter</option>
+          <option value="honey">Honey Butter</option>
+          <option value="cinnamon">Cinnamon Butter</option>
+          <option value="garlic_herb">Garlic Herb Butter</option>
+        </select>
+        <span class="info-icon" data-target="butters-info">i</span>
+        <div class="ingredient-list" id="butters-info">
+          <ul>
+            <li>Softened butter</li>
+            <li>Honey / cinnamon / herbs</li>
+            <li>Salt</li>
+          </ul>
+        </div>
+      </div>
+      <a class="inquire-link"
+         href="mailto:lizsbakeshop2@gmail.com?subject=Inquire%20to%20Buy%20Butter">
+        Inquire to Buy
+      </a>
+    </div>
+
+  </main>
+
+  <!-- JS for toggling ingredient lists -->
+  <script src="app.js"></script>
+</body>
+</html>
